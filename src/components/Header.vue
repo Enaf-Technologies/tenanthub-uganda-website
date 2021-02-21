@@ -25,9 +25,7 @@
     </ul>
   </div>
   <!-- Start Header -->
-  <header
-    class="ax-header haeder-default light-logo-version header-transparent axil-header-sticky"
-  >
+  <header class="ax-header haeder-default light-logo-version header-transparent axil-header-sticky">
     <div class="header-wrapper">
       <div class="container-fluid plr--100 plr_lg--30 plr_md--30 plr_sm--10">
         <div class="row align-items-center">
