@@ -8,9 +8,9 @@
             <g id="-Elements/Header">
                 <g id="Logo" transform="translate(315.000000, 40.000000)">
                     <text id="Keystroke-Startup-la" font-family="DMSans-Bold, DM Sans" font-size="20" font-weight="bold" line-spacing="25" fill="#000248">
-                        <tspan x="75" y="24">Keystroke</tspan>
+                        <tspan x="75" y="24">TenantHub</tspan>
                         <tspan x="175.14" y="24.5001221" font-family="DMSans-Regular, DM Sans" font-weight="normal"></tspan>
-                        <tspan x="76.16" y="49.5001221" font-family="DMSans-Regular, DM Sans" font-size="18" font-weight="normal">Startup landing template</tspan>
+                        <tspan x="76.16" y="49.5001221" font-family="DMSans-Regular, DM Sans" font-size="18" font-weight="normal">Property Management</tspan>
                     </text>
                     <g id="Favicon">
                         <rect id="Base" fill="#702FFF" x="0" y="0" width="60" height="60" rx="14"></rect>
