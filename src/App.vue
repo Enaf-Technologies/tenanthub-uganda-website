@@ -20,27 +20,70 @@ export default {
     this.$loadScript("../js/vendor/modernizr.min.js").then(() => {
       this.$loadScript("../js/vendor/jquery.js").then(() => {
         this.$loadScript("../js/vendor/bootstrap.min.js").then(() => {
-          this.$loadScript("../js/waypoints.min.js");
-          this.$loadScript("../js/wow.js");
-          this.$loadScript("../js/counterup.js");
-          this.$loadScript("../js/imagesloaded.js");
-          this.$loadScript("../js/isotope.js");
-          this.$loadScript("../js/tilt.js");
-          this.$loadScript("../js/anime.js");
-          this.$loadScript("../js/tweenmax.js");
-          this.$loadScript("../js/slipting.js");
-          this.$loadScript("../js/scrollmagic.js");
-          this.$loadScript("../js/addindicators.js");
-          this.$loadScript("../js/slick.js");
-          this.$loadScript("../js/youtube.js");
-          this.$loadScript("../js/countdown.js");
-          this.$loadScript("../js/scrollup.js");
-          this.$loadScript("../js/stickysidebar.js");
-          this.$loadScript("../js/js.cookie.js");
-          this.$loadScript("../js/jquery.style.switcher.js");
-          this.$loadScript("../js/contactform.js");
-          this.$loadScript("../js/plugins/plugins.min.js").then(() => {
-            this.$loadScript("../js/main.js").then(() => {});
+          this.$loadScript("../js/waypoints.min.js").then(() => {
+            this.$loadScript("../js/wow.js").then(() => {
+              this.$loadScript("../js/counterup.js").then(() => {
+                this.$loadScript("../js/imagesloaded.js").then(() => {
+                  this.$loadScript("../js/isotope.js").then(() => {
+                    this.$loadScript("../js/tilt.js").then(() => {
+                      this.$loadScript("../js/anime.js").then(() => {
+                        this.$loadScript("../js/tweenmax.js").then(() => {
+                          this.$loadScript("../js/slipting.js").then(() => {
+                            this.$loadScript("../js/scrollmagic.js").then(
+                              () => {
+                                this.$loadScript("../js/addindicators.js").then(
+                                  () => {
+                                    this.$loadScript("../js/slick.js").then(
+                                      () => {
+                                        this.$loadScript(
+                                          "../js/youtube.js"
+                                        ).then(() => {
+                                          this.$loadScript(
+                                            "../js/countdown.js"
+                                          ).then(() => {
+                                            this.$loadScript(
+                                              "../js/scrollup.js"
+                                            ).then(() => {
+                                              this.$loadScript(
+                                                "../js/stickysidebar.js"
+                                              ).then(() => {
+                                                this.$loadScript(
+                                                  "../js/js.cookie.js"
+                                                ).then(() => {
+                                                  this.$loadScript(
+                                                    "../js/jquery.style.switcher.js"
+                                                  ).then(() => {
+                                                    this.$loadScript(
+                                                      "../js/contactform.js"
+                                                    ).then(() => {
+                                                      this.$loadScript(
+                                                        "../js/plugins/plugins.min.js"
+                                                      ).then(() => {
+                                                        this.$loadScript(
+                                                          "../js/main.js"
+                                                        ).then(() => {});
+                                                      });
+                                                    });
+                                                  });
+                                                });
+                                              });
+                                            });
+                                          });
+                                        });
+                                      }
+                                    );
+                                  }
+                                );
+                              }
+                            );
+                          });
+                        });
+                      });
+                    });
+                  });
+                });
+              });
+            });
           });
         });
       });

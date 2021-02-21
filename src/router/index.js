@@ -50,12 +50,6 @@ const router = createRouter({
             el: to.hash,
             behavior: 'smooth',
           }
-        }else {
-            if (savedPosition) {
-                return savedPosition
-              } else {
-                return { x: 0, y: 0 }
-              }
         }
       }
 });
