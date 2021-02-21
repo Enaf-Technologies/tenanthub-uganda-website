@@ -128,7 +128,7 @@
                 <ul class="mainmenu">
                   <li><router-link to="/">Home</router-link></li>
                   <li><router-link to="/services">Services</router-link></li>
-                  <li><router-link to="/pricing">Pricings</router-link></li>
+                  <li><router-link to="/pricing">Pricing</router-link></li>
                   <li><router-link to="/about-us">About Us</router-link></li>
                   <li><router-link to="/contact-us">Contact</router-link></li>
                 </ul>
@@ -188,7 +188,7 @@
         <ul class="mainmenu-item">
           <li><router-link to="/">Home</router-link></li>
           <li><router-link to="/services">Services</router-link></li>
-          <li><router-link to="/pricing">Pricings</router-link></li>
+          <li><router-link to="/pricing">Pricing</router-link></li>
           <li><router-link to="/about-us">About Us</router-link></li>
           <li><router-link to="/contact-us">Contact</router-link></li>
         </ul>
