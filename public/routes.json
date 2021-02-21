@@ -1,19 +1,9 @@
 {
     "routes": [
         {
-          "route": "/about-us"
-        },
-        {
-          "route": "/contact-us"
-        },
-        {
-          "route": "/services"
-        },
-        {
-          "route": "/pricing"
-        },
-        {
-          "route": "/privacy-policy"
-        }
+            "route": "/*",
+            "serve": "/index.html",
+            "statusCode": 200
+          }
       ]
 }
