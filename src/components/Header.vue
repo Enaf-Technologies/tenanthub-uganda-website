@@ -1,29 +1,4 @@
 <template>
-  <div id="my_switcher" class="my_switcher">
-    <ul>
-      <li>
-        <a
-          href="javascript: void(0);"
-          data-theme="light"
-          class="setColor light"
-        >
-          <img src="../assets/images/about/sun-01.svg" alt="Sun images" /><span
-            title="Light Mode"
-          >
-            Light</span
-          >
-        </a>
-      </li>
-      <li>
-        <a href="javascript: void(0);" data-theme="dark" class="setColor dark">
-          <img
-            src="../assets/images/about/vector.svg"
-            alt="Vector Images"
-          /><span title="Dark Mode"> Dark</span>
-        </a>
-      </li>
-    </ul>
-  </div>
   <!-- Start Header -->
   <header class="ax-header haeder-default light-logo-version header-transparent axil-header-sticky">
     <div class="header-wrapper">
@@ -162,7 +137,6 @@
                 </div>
               </div>
               <!-- End Menu Bar  -->
-              
             </div>
             <!-- End Header Extra  -->
           </div>
@@ -199,6 +173,34 @@
     <div class="side-nav-inner">
       <!-- Start Side Content  -->
       <div class="side-nav-content">
+        <div id="my_switcher" class="my_switcher">
+          <ul>
+            <li>
+              <a
+                href="javascript: void(0);"
+                data-theme="light"
+                class="setColor light"
+              >
+                <img
+                  src="../assets/images/about/sun-01.svg"
+                  alt="Sun images"
+                /><span title="Light Mode"> Activate Light Mode</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="javascript: void(0);"
+                data-theme="dark"
+                class="setColor dark"
+              >
+                <img
+                  src="../assets/images/about/vector.svg"
+                  alt="Vector Images"
+                /><span title="Dark Mode"> Activate Dark Mode</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="row">
           <!-- Start Right Bar  -->
           <div class="col-lg-12 col-12">
@@ -208,20 +210,20 @@
                 <address class="address">
                   <span class="title">Contact Information</span>
                   <p>
-                    Theodore Lowe, Ap #867-859 <br />
-                    Sit Rd, Azusa New York
+                    Ntinda Complex Block D <br />
+                    Ntinda-Kisaasi Rd, Ntinda, Kampala
                   </p>
                 </address>
                 <address class="address">
                   <span class="title">We're Available 24/ 7. Call Now.</span>
                   <p>
-                    <a class="tel" href="tel:8884562790"
-                      ><i class="fas fa-phone"></i>(888) 456-2790</a
+                    <a class="tel" href="tel:8256702173540"
+                      ><i class="fas fa-phone"></i>(256) 702-173540</a
                     >
                   </p>
                   <p>
-                    <a class="tel" href="tel:12125553333"
-                      ><i class="fas fa-fax"></i>(121) 255-53333</a
+                    <a class="tel" href="tel:256779705618"
+                      ><i class="fas fa-phone"></i>(256) 779-705618</a
                     >
                   </p>
                 </address>
@@ -238,9 +240,6 @@
                     </li>
                     <li>
                       <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-behance"></i></a>
                     </li>
                     <li>
                       <a href="#"><i class="fab fa-linkedin-in"></i></a>

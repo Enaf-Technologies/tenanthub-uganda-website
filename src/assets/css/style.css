@@ -11591,7 +11591,7 @@ ul.mainmenu li.has-dropdown.active ul.axil-submenu.visible {
 }
 
 .side-nav .side-nav-inner {
-  padding: 100px 10px;
+  padding: 70px 10px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -17329,13 +17329,9 @@ Accourdion Style Two
 }
 
 .my_switcher {
-  position: fixed;
-  left: 30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%) rotate(90deg);
-      -ms-transform: translateY(-50%) rotate(90deg);
-          transform: translateY(-50%) rotate(90deg);
+  position: relative;
   z-index: 99;
+  margin-bottom: 40px;
 }
 
 .my_switcher ul {
@@ -17346,14 +17342,6 @@ Accourdion Style Two
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-radius: 100px;
 }
 
@@ -17372,28 +17360,13 @@ Accourdion Style Two
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -webkit-flex-direction: row-reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .my_switcher ul li a img {
-  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .my_switcher ul li a span {
-  -webkit-transform: rotate(-180deg);
-      -ms-transform: rotate(-180deg);
-          transform: rotate(-180deg);
   display: block;
   text-transform: uppercase;
 }
