@@ -1,9 +1,7 @@
 <template>
   <main class="page-wrappper">
     <!-- Start Breadcrumb Area -->
-    <div
-      class="axil-breadcrumb-area breadcrumb-style-2 pt--170 pb--70 theme-gradient"
-    >
+    <div class="axil-breadcrumb-area breadcrumb-style-2 pt--170 pb--70 theme-gradient">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-5 order-2 order-lg-1 mt_md--30 mt_sm--30">
@@ -56,9 +54,7 @@
     <!-- End Breadcrumb Area -->
 
     <!-- Axil Scroll Navigation Area  -->
-    <div
-      class="axil-scroll-navigation-area axil-scroll-navigation position-relative bg-color-white"
-    >
+    <div class="axil-scroll-navigation-area axil-scroll-navigation position-relative bg-color-white">
       <!-- Start Navigation Nav  -->
       <nav class="axil-scroll-nav navbar navbar-example2">
         <ul class="nav nav-pills justify-content-center sidebar__inner">
@@ -121,7 +117,7 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Manage expectations and streamline communications between you and your tenants. </a>
+                      Manage expectations and streamline communications between you and your tenants.
                     </h4>
                     <p>
                       The TRM makes it easy to manage expectations and streamline communications between you and your tenants. It's our goal to make it quick and easy for you to communicate and keep track of your tenants and your interactions in a single location. The TRM does just that.
@@ -152,7 +148,7 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Powerful search features</a>
+                      Powerful search features
                     </h4>
                     <p>
                       TenantHub provides all the features of a comprehensive CRM tool specifically built for commercial tenants. This makes it easy to find contact details and statuses on your tenants in on easy to search location.
@@ -183,7 +179,7 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Reminders and event scheduling</a>
+                      Reminders and event scheduling
                     </h4>
                     <p>
                       Make use of the tenant reminders feature to keep track of touchpoints with your tenants. For example, set a reminder to follow up on an agreement, or lease review, with your tenant.
@@ -214,7 +210,7 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Tenant History</a>
+                      Tenant History
                     </h4>
                     <p>
                       An important element of understanding how you interact with your tenants is to understand their historical activity. TenantHub provides insight into work order history, vendor interactions between tenants, and access records linked to tenants. As well as a log of all communication between you and your tenants when using the broadcast and instant messaging features.
@@ -267,8 +263,7 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Don't Bcc every one of your tenants in a single email... Use our centralized, and trackable, email broadcast tool
-</a>
+                      Don't Bcc every one of your tenants in a single email... Use our centralized, and trackable, email broadcast tool
                     </h4>
                     <p>
                         The tenant broadcast system provides a central communication channel to all tenants.
@@ -305,7 +300,7 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Insights into broadcast effectiveness</a>
+                      Insights into broadcast effectiveness
                     </h4>
                     <p>
                       TenantHub provides insights for each broadcast you send, by indicating open rate, number of recipients, which tenants received and opened your broadcast and when. 
@@ -358,7 +353,9 @@
                     </div>
                   </div>
                   <div class="content">
-                    <h4 class="title"><a href="single-service.html">A common pain point for commercial property management is the administration and processes related to tenant work requests and vendor management. </a></h4>
+                    <h4 class="title">
+                      A common pain point for commercial property management is the administration and processes related to tenant work requests and vendor management.
+                      </h4>
                     <p>
                       TenantHub provides a comprehensive work request and approval process, allowing you to keep track of everything relating to tenant work and service requests. 
                     </p>
@@ -388,7 +385,7 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Work Requests</a>
+                      Work Requests
                     </h4>
                     <p>
                       Make it easy for your tenants, and your team, to request work and track everything in one location. Each work order goes through our developed workflow process, ensuring quality of data and information throughout and at the completion of each piece of work. Such as what type of work is approved, who approved it, when the work is scheduled, who’s going to do the work, and much more...
@@ -419,7 +416,7 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Approved Work Schedules</a>
+                      Approved Work Schedules
                     </h4>
                     <p>
                       A daily work schedule makes it easy to manage each day’s work, property access, and view vendor information in real-time. The approved work schedule can also be an automatted pdf report delivered to you and your team as desired. 
@@ -450,7 +447,7 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Work Projectsg</a>
+                      Work Projects
                     </h4>
                     <p>
                       Use projects to manage multiple work orders in one place. For example, manage all the work involved in a new tenant buildout project. The project overview screen provides insight into project health by delivering metrics about work order status, vendors in the project, expected start and completion dates, and more...
@@ -481,7 +478,7 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Work Order History</a>
+                      Work Order History
                     </h4>
                     <p>
                       Each and every work order keeps track of all interactions with the work order request and processing. TenantHub keeps track of the request, the linked vendors and their access, any changes to the work order throughout the execution phase, and details relating to which user interacted with the work order and how. Providing a complete history of work from request to close.
@@ -534,7 +531,7 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Vendor Relationship Management (VRM)</a>
+                      Vendor Relationship Management (VRM)
                     </h4>
                     <p>
                       Keep track of the vendors who perform work, and provide services, within your property.
@@ -569,7 +566,7 @@ The vendor CRM also serves as a resource for future work, by providing tenants a
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Vendor History Capture</a>
+                      Vendor History Capture
                     </h4>
                     <p>
                       The vendor CRM keeps track of vendors history relating to work orders, and building access. 
@@ -600,7 +597,7 @@ The vendor CRM also serves as a resource for future work, by providing tenants a
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Pre-Populated Work Requests</a>
+                      Pre-Populated Work Requests
                     </h4>
                     <p>
                       Once in the VRM vendors are available to your tenants and property management team during the work order creation and management process. Streamlining data entry, especially for repeat vendors or service providers.  
@@ -631,7 +628,7 @@ The vendor CRM also serves as a resource for future work, by providing tenants a
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">ICS Compliant Reporting</a>
+                      ICS Compliant Reporting
                     </h4>
                     <p>
                       When making use of the TenantHub Building Access Control System, a real-time Incident Control System compliant report can be generated, informing you and emergency staff with details on which vendors and vendor team members, are on-premise. Potentially saving lives and streamlining safety measures/procedures. 
@@ -684,7 +681,7 @@ The vendor CRM also serves as a resource for future work, by providing tenants a
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Check-in/out Process</a>
+                     Check-in/out Process
                     </h4>
                     <p>
                       The access control system provides handy check-in/out abilities throughout the app. On work orders, in vendor profiles, on admin dashboards, and on our custom security dashboard - built specifically for front-desk operations to streamline the in/out traffic throughout the day.
@@ -715,7 +712,7 @@ The vendor CRM also serves as a resource for future work, by providing tenants a
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Pre-Approved Vendor Access</a>
+                      Pre-Approved Vendor Access
                     </h4>
                     <p>
                       Regular vendor visits create unnecessary administration and slows down the process of providing access. To handle regular vendor access, the Pre-Approved Vendor Access lists (PAVL) make it easy for tenants and property management to determine regular access to vendors by day of the week, time of day, and within specific building spaces. 
@@ -746,7 +743,7 @@ The vendor CRM also serves as a resource for future work, by providing tenants a
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Improve overall building security</a>
+                      Improve overall building security
                     </h4>
                     <p>
                       At any time of the day, a snapshot of who is in the building and where they are can be obtained. Additionally, the check-in/out process ensures that only vendors with pre-approved access can be checked in.
@@ -802,7 +799,7 @@ The vendor CRM also serves as a resource for future work, by providing tenants a
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="single-service.html">Get Business Insights</a>
+                      Get Business Insights
                     </h4>
                     <p>
                         As you and your tenants use TenantHub we capture crucial data-points to help you make better business decisions based on data-driven insights. Through customizable and scheduled reporting, and administration dashboards, we deliver insights in real-time.
@@ -820,54 +817,6 @@ The vendor CRM also serves as a resource for future work, by providing tenants a
       <!-- End Navigation Content  -->
     </div>
     <!-- Axil Scroll Navigation Area  -->
-
-    <!-- Start Call To Action -->
-    <div
-      class="axil-call-to-action-area shape-position ax-section-gap theme-gradient"
-    >
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="axil-call-to-action">
-              <div class="section-title text-center">
-                <span class="sub-title extra04-color wow" data-splitting
-                  >Let's work together</span
-                >
-                <h2 class="title wow" data-splitting>
-                  Need a successful project?
-                </h2>
-                <a class="axil-button btn-large btn-transparent" href="#"
-                  ><span class="button-text">Estimate Project</span
-                  ><span class="button-icon"></span
-                ></a>
-                <div class="callto-action">
-                  <span class="text wow" data-splitting>Or call us now</span>
-                  <span class="wow" data-splitting
-                    ><i class="fal fa-phone-alt"></i>
-                    <a href="#">(123) 456 7890</a></span
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="shape-group">
-        <div class="shape shape-01">
-          <i class="icon icon-shape-14"></i>
-        </div>
-        <div class="shape shape-02">
-          <i class="icon icon-shape-09"></i>
-        </div>
-        <div class="shape shape-03">
-          <i class="icon icon-shape-10"></i>
-        </div>
-        <div class="shape shape-04">
-          <i class="icon icon-shape-11"></i>
-        </div>
-      </div>
-    </div>
-    <!-- End Call To Action -->
   </main>
 </template>
 

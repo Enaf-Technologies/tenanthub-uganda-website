@@ -12883,7 +12883,7 @@ a.axil-link:hover::after {
 }
 
 .section-title.text-center p {
-  padding: 0 25%;
+  padding: 0 20%;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {

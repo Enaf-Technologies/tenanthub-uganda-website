@@ -22,8 +22,6 @@
         },
         methods: function (e) {
             axilKey.axilWow();
-            axilKey.counterUp();
-            axilKey.countDown();
             axilKey.ytPlayer();
             axilKey.splittingText();
             axilKey.tiltAnimation();
@@ -184,16 +182,6 @@
             });
         },
 
-        countDown: function () {
-            $('[data-countdown]').each(function () {
-                var $this = $(this),
-                    finalDate = $(this).data('countdown');
-                $this.countdown(finalDate, function (event) {
-                    $this.html(event.strftime('<span class="axil-count days"><span class="count-inner"><span class="time-count">%-D</span> <p>Days</p></span></span> <span class="axil-count hour"><span class="count-inner"><span class="time-count">%-H</span> <p>Hours</p></span></span> <span class="axil-count minutes"><span class="count-inner"><span class="time-count">%M</span> <p>Minutes</p></span></span> <span class="axil-count second"><span class="count-inner"><span class="time-count">%S</span> <p>Seconds</p></span></span>'));
-                });
-            });
-        },
-
         scrollTop: function () {
             $.scrollUp({
                 scrollText: '<span class="text">top</span>',
@@ -341,7 +329,7 @@
         },
         
         _clickDoc: function (e) {
-            var inputblur, inputFocus, openSideNav, closeSideNav, openSubMenu , closeSubMenu, searchTriggerShow , searchTriggerHide, axilaccordion, OpenMobileMenu, closeMobileMenu, closeMenuWrapperClick, closeMobileMenu2;
+            var inputblur, inputFocus, openSideNav, closeSideNav, openSubMenu , closeSubMenu, axilaccordion, OpenMobileMenu, closeMobileMenu, closeMenuWrapperClick, closeMobileMenu2;
             
             inputblur = function (e) {
 				if (!$(this).val()) {
@@ -404,16 +392,6 @@
                 }
             };
 
-            searchTriggerShow = function (e) {
-                e.preventDefault();
-                axilKey._navsearch.addClass('visible')
-            };
-
-            searchTriggerHide = function (e) {
-                e.preventDefault();
-                axilKey._navsearch.removeClass('visible')
-            };
-            
             axilaccordion = function (e) {
                 e.preventDefault();
                 $(this).siblings('.collapse.show').parent().removeClass('open').toggleClass('active');
@@ -426,8 +404,6 @@
                 .on('click', '#close-sidenav , .side-nav-opened', closeSideNav)
                 // .on('click', '.mainmenu-nav ul.mainmenu li a', openSubMenu )
                 // .on('click' , closeSubMenu)
-                .on('click' , '.search-trigger' , searchTriggerShow)
-                .on('click' , '.axil-search-area .navbar-search-close' , searchTriggerHide)
                 .on('click' , '.axil-accordion .card .card-header' , axilaccordion)
                 .on('click' , '.popup-navigation-activation' , OpenMobileMenu)
                 .on('click' , '.close-menu' , closeMobileMenu)
