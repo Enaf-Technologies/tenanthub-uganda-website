@@ -18,14 +18,17 @@
                   >
                     Tenant Service <br />
                     Meets
-                    <br/>
+                    <br />
                     Property Management
                   </h1>
                   <router-link
                     class="axil-button btn-large btn-transparent wow slideFadeInUp"
                     data-wow-duration="1s"
                     data-wow-delay="800ms"
-                    to="/services"><span class="button-text">View Features</span><span class="button-icon"></span></router-link>
+                    to="/services"
+                    ><span class="button-text">View Features</span
+                    ><span class="button-icon"></span
+                  ></router-link>
                 </div>
               </div>
             </div>
@@ -35,34 +38,52 @@
         <div class="contact-form-wrapper">
           <div class="axil-contact-form contact-form-style-1">
             <h3 class="title">Request A Demo</h3>
-            <form action="#">
+            <form @submit.prevent method="post">
               <div class="form-group">
-                <input type="text" />
+                <input type="text" v-model.trim="demoRequest.name" />
                 <label>Name</label>
                 <span class="focus-border"></span>
               </div>
               <div class="form-group">
-                <input type="email" />
+                <input type="email" v-model.trim="demoRequest.email" />
                 <label>Email</label>
                 <span class="focus-border"></span>
               </div>
               <div class="form-group">
-                <input type="text" />
+                <input type="text" v-model.trim="demoRequest.company" />
                 <label>Company</label>
                 <span class="focus-border"></span>
               </div>
               <div class="form-group">
-                <input type="text" />
+                <input type="text" v-model.trim="demoRequest.phoneNumber" />
                 <label>Phone</label>
                 <span class="focus-border"></span>
               </div>
               <div class="form-group">
-                <button class="axil-button btn-large btn-transparent w-100">
-                  <span class="button-text text-uppercase">Request a Demo</span
-                  ><span class="button-icon"></span>
+                <button
+                  class="axil-button btn-large btn-transparent w-100 center-content"
+                  @click="postDemoRequest()"
+                >
+                  <span class="button-text text-uppercase">Request a Demo</span>
+                  <div
+                    v-if="loading"
+                    class="spinner-border"
+                    role="status"
+                    style="display: inline-flex; align-self: center"
+                  >
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <span
+                    v-else
+                    class="button-icon"
+                    style="display: inline-flex; align-self: center"
+                  ></span>
                 </button>
               </div>
             </form>
+            <div class="callto-action-wrapper text-center">
+              <span v-if="error.status" class="text">{{ error.message }}</span>
+            </div>
             <div class="callto-action-wrapper text-center">
               <span class="text">Or call us now</span>
               <span
@@ -88,12 +109,17 @@
                 >what we can do for you</span
               >
               <h2 class="title wow" data-splitting>
-                <span>Tenant first property management <br />is our focus.</span>
+                <span
+                  >Tenant first property management <br />is our focus.</span
+                >
               </h2>
               <p class="subtitle-2 wow" data-splitting>
-                TenantHub is a Commercial Tenant Management &amp; Property Management System rolled into one. 
-                Which means we take a tenant first approach to everything we do. 
-                Our goal is to make it easy for you to operate your property and deliver superior customer service to your tenants at the same time. <br/> Here's how...
+                TenantHub is a Commercial Tenant Management &amp; Property
+                Management System rolled into one. Which means we take a tenant
+                first approach to everything we do. Our goal is to make it easy
+                for you to operate your property and deliver superior customer
+                service to your tenants at the same time. <br />
+                Here's how...
               </p>
             </div>
           </div>
@@ -119,14 +145,21 @@
                 </div>
                 <div class="content">
                   <h4 class="title wow">
-                    <router-link to="/services#section1">Tenant Relatinship Management</router-link>
+                    <router-link to="/services#section1"
+                      >Tenant Relatinship Management</router-link
+                    >
                   </h4>
                   <p class="wow">
-                    At the core of TenantHub is the tenant relationship management feature or TRM.
-
-Manage expectations and streamline communications between you and your tenants. 
+                    At the core of TenantHub is the tenant relationship
+                    management feature or TRM. Manage expectations and
+                    streamline communications between you and your tenants.
                   </p>
-                  <router-link class="axil-button" data-hover="Learn More" to="/services#section1">Learn More</router-link>
+                  <router-link
+                    class="axil-button"
+                    data-hover="Learn More"
+                    to="/services#section1"
+                    >Learn More</router-link
+                  >
                 </div>
               </div>
             </div>
@@ -155,12 +188,19 @@ Manage expectations and streamline communications between you and your tenants.
                 </div>
                 <div class="content">
                   <h4 class="title wow">
-                    <router-link to="/services#section2">Tenant Broadcasting</router-link>
+                    <router-link to="/services#section2"
+                      >Tenant Broadcasting</router-link
+                    >
                   </h4>
                   <p class="wow">
-                    Deliver property-wide broadcasts (e-blasts) to your tenants and keep track of who opens your broadcast and when. Stop BCCing your tenants on an email and hoping your message gets through...
+                    Deliver property-wide broadcasts (e-blasts) to your tenants
+                    and keep track of who opens your broadcast and when. Stop
+                    BCCing your tenants on an email and hoping your message gets
+                    through...
                   </p>
-                  <router-link class="axil-button" to="/services#section2">Learn More</router-link>
+                  <router-link class="axil-button" to="/services#section2"
+                    >Learn More</router-link
+                  >
                 </div>
               </div>
             </div>
@@ -187,12 +227,19 @@ Manage expectations and streamline communications between you and your tenants.
                 </div>
                 <div class="content">
                   <h4 class="title wow">
-                    <router-link to="/services#section3">Work Order Management</router-link>
+                    <router-link to="/services#section3"
+                      >Work Order Management</router-link
+                    >
                   </h4>
                   <p class="wow">
-                    Tenants request work on their space directly in TenantHub. This makes it easy to ensure the work is approved before it's started, and completed with handy check-in/check-out tools, and managed through Approved Work Schedules (AWS).
+                    Tenants request work on their space directly in TenantHub.
+                    This makes it easy to ensure the work is approved before
+                    it's started, and completed with handy check-in/check-out
+                    tools, and managed through Approved Work Schedules (AWS).
                   </p>
-                  <router-link class="axil-button" to="/services#section3">Learn More</router-link>
+                  <router-link class="axil-button" to="/services#section3"
+                    >Learn More</router-link
+                  >
                 </div>
               </div>
             </div>
@@ -219,12 +266,18 @@ Manage expectations and streamline communications between you and your tenants.
                 </div>
                 <div class="content">
                   <h4 class="title wow">
-                    <router-link to="/services#section4">Vendor CRM</router-link>
+                    <router-link to="/services#section4"
+                      >Vendor CRM</router-link
+                    >
                   </h4>
                   <p class="wow">
-                    Work orders become a breeze to submit to our Vendor CRM. You can also perform reporting and maintain information of all the vendors that perform work on your property.
+                    Work orders become a breeze to submit to our Vendor CRM. You
+                    can also perform reporting and maintain information of all
+                    the vendors that perform work on your property.
                   </p>
-                  <router-link class="axil-button" to="/services#section4">Learn More</router-link>
+                  <router-link class="axil-button" to="/services#section4"
+                    >Learn More</router-link
+                  >
                 </div>
               </div>
             </div>
@@ -251,12 +304,18 @@ Manage expectations and streamline communications between you and your tenants.
                 </div>
                 <div class="content">
                   <h4 class="title wow">
-                    <router-link to="/services#section5">Building Access Managment</router-link>
+                    <router-link to="/services#section5"
+                      >Building Access Managment</router-link
+                    >
                   </h4>
                   <p class="wow">
-                    Streamline your security team’s check-in/out process, make use of pre-approved vendor access, and improve facility security.
+                    Streamline your security team’s check-in/out process, make
+                    use of pre-approved vendor access, and improve facility
+                    security.
                   </p>
-                  <router-link class="axil-button" to="/services#section5">Learn More</router-link>
+                  <router-link class="axil-button" to="/services#section5"
+                    >Learn More</router-link
+                  >
                 </div>
               </div>
             </div>
@@ -283,10 +342,16 @@ Manage expectations and streamline communications between you and your tenants.
                 </div>
                 <div class="content">
                   <h4 class="title wow">
-                    <router-link to="/services#section6">Business Insights</router-link>
+                    <router-link to="/services#section6"
+                      >Business Insights</router-link
+                    >
                   </h4>
                   <p class="wow">
-                    As you and your tenants use TenantHub we capture crucial data-points to help you make better business decisions based on data-driven insights. Through customizable and scheduled reporting, and administration dashboards, we deliver insights in real-time.
+                    As you and your tenants use TenantHub we capture crucial
+                    data-points to help you make better business decisions based
+                    on data-driven insights. Through customizable and scheduled
+                    reporting, and administration dashboards, we deliver
+                    insights in real-time.
                   </p>
                 </div>
               </div>
@@ -301,7 +366,88 @@ Manage expectations and streamline communications between you and your tenants.
 </template>
 
 <script>
+import * as fb from "../firebase";
+
 export default {
   name: "Home",
+  data() {
+    return {
+      demoRequest: {
+        name: "",
+        email: "",
+        company: "",
+        phoneNumber: "",
+      },
+      success: false,
+      error: {
+        message: "",
+        status: false,
+        messages: [],
+      },
+      loading: false,
+    };
+  },
+  methods: {
+    async postDemoRequest() {
+      this.loading = true;
+
+      if (!this.demoRequest.name) {
+        this.error.messages.push("Name required.");
+      }
+
+      if (!this.demoRequest.email) {
+        this.error.messages.push("Email required.");
+      } else if (!this.validEmail(this.demoRequest.email)) {
+        this.error.messages.push("Valid email required.");
+      }
+
+      if (!this.demoRequest.phoneNumber) {
+        this.error.messages.push("Phone number required.");
+      }
+
+      if (!!this.error.messages.length) {
+        this.loading = false;
+        this.error.status = true;
+        this.error.message = "Sorry! All fields are required!";
+      } else {
+        // create demo request in firebase
+        await fb.demoRequestsCollection
+          .add({
+            createdOn: new Date(),
+            name: this.demoRequest.name,
+            company: this.demoRequest.company,
+            email: this.demoRequest.email,
+            phoneNumber: this.demoRequest.phoneNumber,
+          })
+          .then(() => {
+            this.loading = false;
+            this.error.status = true;
+            this.error.message =
+              "Demo request recieved successfully. Our team will contact you.";
+
+            setTimeout(() => {
+              this.error.status = false;
+              this.error.message = "";
+            }, 2000);
+          })
+          .catch(() => {
+            this.loading = false;
+            this.error.status = true;
+            this.error.message =
+              "Sorry! We were unable to send the demo. Please try again later.";
+
+            setTimeout(() => {
+              this.error.status = false;
+              this.error.message = "";
+            }, 2000);
+          });
+      }
+    },
+
+    validEmail: function (email) {
+      var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    },
+  },
 };
 </script>

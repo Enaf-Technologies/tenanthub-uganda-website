@@ -9,9 +9,10 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "firebase": "^8.2.9",
     "vue": "^3.0.5",
-    "vue-router": "^4.0.4",
-    "vue-plugin-load-script": "^2.0.1"
+    "vue-plugin-load-script": "^2.0.1",
+    "vue-router": "^4.0.4"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

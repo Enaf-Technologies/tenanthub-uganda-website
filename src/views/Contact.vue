@@ -39,7 +39,7 @@
             <div class="contact-form-wrapper">
               <!-- Start Contact Form -->
               <div class="axil-contact-form contact-form-style-1">
-                <h3 class="title">Get a free Keystroke quote now</h3>
+                <h3 class="title">Have any queries, Please write to us</h3>
 
                 <form
                   id="contact-form"
@@ -93,8 +93,8 @@
                       pm
                     </p>
                     <p>
-                      <a class="axil-link" href="tel:1234567890"
-                        >(123) 456 7890</a
+                      <a class="axil-link" href="tel:256702173540"
+                        >(256) 702 173540</a
                       >
                     </p>
                   </div>
