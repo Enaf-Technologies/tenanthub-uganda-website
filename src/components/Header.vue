@@ -13,9 +13,6 @@
                   viewBox="0 0 281 60"
                   version="1.1"
                 >
-                  <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
-                  <title>Logo</title>
-                  <desc>Created with Sketch.</desc>
                   <g
                     id="Symbols"
                     stroke="none"
@@ -101,7 +98,7 @@
                 <ul class="mainmenu">
                   <li><router-link to="/">Home</router-link></li>
                   <li><router-link to="/services">Services</router-link></li>
-                  <li><router-link to="/pricing">Pricing</router-link></li>
+
                   <li><router-link to="/about-us">About Us</router-link></li>
                   <li><router-link to="/contact-us">Contact</router-link></li>
                 </ul>

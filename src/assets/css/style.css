@@ -11304,8 +11304,8 @@ Header Styles
   text-decoration: none;
 }
 
-.haeder-default .logo a svg {
-  width: 100%;
+.haeder-default .logo a img {
+  width: 50px;
 }
 
 .haeder-default .mainmenu-wrapepr {
@@ -17597,13 +17597,6 @@ Slider Style One
   }
 }
 
-.axil-slide.slide-style-2.bg-image--3 {
-  background-image: url(../images/bg/bg-image-3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-
 .axil-slide.slide-style-2.theme-gradient-6 {
   position: relative;
 }
@@ -17991,9 +17984,6 @@ Slider Style One
   }
 }
 
-.axil-slide.banner-technology.bg_image--1 {
-  background-image: url(../images/bg/bg-image-3.jpg);
-}
 
 .axil-slide.banner-technology.theme-gradient::after {
   position: absolute;
@@ -18059,17 +18049,6 @@ Slider Style One
   .portfolio-slider .thumbnail img {
     width: 100%;
   }
-}
-
-.marque-images {
-  background-image: url(../images/slider/designer-text.png);
-  background-repeat: repeat-x;
-  background-size: auto;
-  height: 468px;
-  position: absolute;
-  width: 100%;
-  bottom: -47%;
-  right: 0;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
